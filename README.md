@@ -1,5 +1,16 @@
 # Angular-网易云
     感谢原作者的教学，使我受益匪浅
+
+## 启动接口（网易云音乐接口）：
+   git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git
+   npm install
+   npm start
+
+## 启动项目：
+   git clone https://github.com/lycHub/ng-wyy.git
+   npm install
+   npm start
+
 ## angular 模块化思想
     appmodule 管理单独coremodule
 
