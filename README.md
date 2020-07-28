@@ -1,5 +1,9 @@
 # Angular-网易云
-    感谢原作者的教学，使我受益匪浅
+    +Thanks to the original author's teaching, I benefited a lot.
+    
+    +Thanks for the open source data provided by the interface provider to facilitate our learners to use it.
+    
+    +TIPS:When it comes to security issues, it is not recommended to deploy the project to the server to prevent privacy issues.
 
 ## 启动接口（网易云音乐接口）：
     git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git
@@ -16,30 +20,29 @@
     npm start
 
 ## angular 模块化思想
-    appmodule 管理单独coremodule
+    +Use Appmodule to manage the Coremodule;
 
-    coremodule 相当于自己的根模块将其他模块导入至此
+    +Coremodule: As the root module for myself,other module only to put them in this module.It convienent for us to maintian modules;
 
-    sharemodule 把一些公共的样式，组件，指令导入导出，方便其他特性模块引用这些组件
+    +sharemodule: Put the generic component,module in it,other module can use it;
 
-    servicesmodule 所有的服务放入此
+    +servicesmodule: Put all services module in it;
 
-    pagesmodule 管理所有的页面（主页/登录/..）
+    +pagesmodule Put all pages in it(/home/login/rigister...)
 
-    模块化设计符合推荐设计模式，方便日后管理
+    +Modular design is recommended by Angular.io,This makes the project more clear and easy to maintain and manage；
 
 ## 项目中的小坑
-    angular关于params 分页中的queryString应使用node 中的const queryString = require('query-string');
+    +angular关于params 分页中的queryString应使用node 中的const queryString = require('query-string');
     若使用ECMA标准的import {queryString} from 'query-string';会报错没有导出类
 
-    命名要简洁，易懂，且拼写检查要及时进行，否则会出现意外
+    +命名要简洁，易懂，且拼写检查要及时进行，否则会出现意外
 
-    ng : 无法加载文件 C:\Users\kkwang\AppData\Roaming\npm\ng.ps1。未对文件 C:\Users\kkwang\AppData\Roaming\npm\ng.ps1 进行数字签名。无法在当前系统上运行该脚本。有关运行脚本和设置执
+    +ng : 无法加载文件 C:\Users\kkwang\AppData\Roaming\npm\ng.ps1。未对文件 C:\Users\kkwang\AppData\Roaming\npm\ng.ps1 进行数字签名。无法在当前系统上运行该脚本。有关运行脚本和设置执
     行策略的详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
     所在位置
-
     set-ExecutionPolicy RemoteSigned
 
-    更改权限为A
+    +更改权限为A
     get-ExecutionPolicy
     显示： RemoteSigned 已完成错误更改"# Angular-wyMuxic" 
