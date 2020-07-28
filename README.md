@@ -1,9 +1,9 @@
 # Angular-网易云
-    +Thanks to the original author's teaching, I benefited a lot.
+   Thanks to the original author's teaching, I benefited a lot.
     
-    +Thanks for the open source data provided by the interface provider to facilitate our learners to use it.
+   Thanks for the open source data provided by the interface provider to facilitate our learners to use it.
     
-    +TIPS:When it comes to security issues, it is not recommended to deploy the project to the server to prevent privacy issues.
+   TIPS:When it comes to security issues, it is not recommended to deploy the project to the server to prevent privacy issues.
 
 ## 启动接口（网易云音乐接口）：
     git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git
@@ -20,17 +20,17 @@
     npm start
 
 ## angular 模块化思想
-    +Use Appmodule to manage the Coremodule;
+   Use Appmodule to manage the Coremodule;
 
-    +Coremodule: As the root module for myself,other module only to put them in this module.It convienent for us to maintian modules;
+   Coremodule: As the root module for myself,other module only to put them in this module.It convienent for us to maintian modules;
 
-    +sharemodule: Put the generic component,module in it,other module can use it;
+   Sharemodule: Put the generic component,module in it,other module can use it;
 
-    +servicesmodule: Put all services module in it;
+   Servicesmodule: Put all services module in it;
 
-    +pagesmodule Put all pages in it(/home/login/rigister...)
+   Pagesmodule Put all pages in it(/home/login/rigister...)
 
-    +Modular design is recommended by Angular.io,This makes the project more clear and easy to maintain and manage；
+   Modular design is recommended by Angular.io,This makes the project more clear and easy to maintain and manage；
 
 ## 项目中的小坑
     +angular关于params 分页中的queryString应使用node 中的const queryString = require('query-string');
